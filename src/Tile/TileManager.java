@@ -24,7 +24,7 @@ public class TileManager {
         mapTileNum = new int[gp.maxWorldCol][gp.maxWorldRow];
 
         getTileImage();
-        loadMap("maps/world01.txt");
+        loadMap("maps/worldmap1.txt");
     }
 
     public void getTileImage() {
@@ -32,27 +32,25 @@ public class TileManager {
         try {
 
             tile[0] = new Tile();
-            tile[0].image = ImageIO.read(getClass().getClassLoader().getResourceAsStream("tiles/grass.png"));
+            tile[0].image = ImageIO.read(getClass().getClassLoader().getResourceAsStream("tiles/floor1.png"));
 
             tile[1] = new Tile();
-            tile[1].image = ImageIO.read(getClass().getClassLoader().getResourceAsStream("tiles/wall.png"));
-            tile[1].collision=true;
+            tile[1].image = ImageIO.read(getClass().getClassLoader().getResourceAsStream("tiles/floor2.png"));
 
             tile[2] = new Tile();
-            tile[2].image = ImageIO.read(getClass().getClassLoader().getResourceAsStream("tiles/water.png"));
-            tile[2].collision=true;
+            tile[2].image = ImageIO.read(getClass().getClassLoader().getResourceAsStream("tiles/floor3.png"));
 
             tile[3] = new Tile();
-            tile[3].image = ImageIO.read(getClass().getClassLoader().getResourceAsStream("tiles/sand.png"));
-
+            tile[3].image = ImageIO.read(getClass().getClassLoader().getResourceAsStream("tiles/wall1.png"));
+            tile[3].collision=true;
 
             tile[4] = new Tile();
-            tile[4].image = ImageIO.read(getClass().getClassLoader().getResourceAsStream("tiles/tree.png"));
+            tile[4].image = ImageIO.read(getClass().getClassLoader().getResourceAsStream("tiles/wall2.png"));
             tile[4].collision=true;
 
             tile[5] = new Tile();
-            tile[5].image = ImageIO.read(getClass().getClassLoader().getResourceAsStream("tiles/earth.png"));
-
+            tile[5].image = ImageIO.read(getClass().getClassLoader().getResourceAsStream("tiles/wall3.png"));
+            tile[5].collision=true;
 
         } catch (IOException e) {
             e.printStackTrace();

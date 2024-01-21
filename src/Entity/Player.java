@@ -35,7 +35,7 @@ public class Player extends Entity {
 
     public void setDefaultValues() {
 
-        worldX = gp.tileSize * 25;
+        worldX = gp.tileSize * 24;
         worldY = gp.tileSize * 7;
         speed = 4;
         direction = "down";
@@ -50,8 +50,8 @@ public class Player extends Entity {
             down1 = ImageIO.read(getClass().getClassLoader().getResourceAsStream("player/tile000.png"));
             down2 = ImageIO.read(getClass().getClassLoader().getResourceAsStream("player/tile002.png"));
             left1 = ImageIO.read(getClass().getClassLoader().getResourceAsStream("player/tile016.png"));
-            left2 = ImageIO.read(getClass().getClassLoader().getResourceAsStream("player/tile018.png"));
-            right1 = ImageIO.read(getClass().getClassLoader().getResourceAsStream("player/tile011.png"));
+            left2 = ImageIO.read(getClass().getClassLoader().getResourceAsStream("player/tile017.png"));
+            right1 = ImageIO.read(getClass().getClassLoader().getResourceAsStream("player/tile012.png"));
             right2 = ImageIO.read(getClass().getClassLoader().getResourceAsStream("player/tile013.png"));
 
         } catch (IOException e) {
