@@ -45,7 +45,7 @@ public class UI {
             text= "Your time is "+ dFormat.format(playTime)+ "!!";
             textLenght= (int)g2.getFontMetrics().getStringBounds(text,g2).getWidth(); // returns text lenght
             x= gp.screenWidth/2-textLenght/4;
-            y = gp.screenHeight/2+(gp.tileSize*2);
+            y = gp.screenHeight/2+(gp.tileSize*4);
             g2.drawString(text,x,y);
 
 
